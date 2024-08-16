@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "955750749064",
+    "project_id": "travelplan-61f15",
+    "storage_bucket": "travelplan-61f15.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955750749064:android:a5d577519d42f83738203d",
+        "android_client_info": {
+          "package_name": "com.example.travelplan_yohai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955750749064-g31op5039otgi60f09pihitv3skj57kn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdaBsg-b2z_o-yDGPebhndwgsPRVoumqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955750749064-g31op5039otgi60f09pihitv3skj57kn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
