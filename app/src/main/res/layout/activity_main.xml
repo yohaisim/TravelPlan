@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.MainActivity">
+    tools:context=".activities.MainActivity"
+    >
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/lin_layout"
@@ -21,14 +22,16 @@
             android:layout_gravity="center_horizontal"
             tools:srcCompat="@tools:sample/avatars" />
 
+
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/main_LBL_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="Name"
-            tools:layout_editor_absoluteX="139dp"
-            tools:layout_editor_absoluteY="316dp" />
+            android:textSize="18sp"
+            android:textColor="#0088A3"
+        />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/main_LBL_email"
@@ -36,8 +39,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="E-Mail"
-            tools:layout_editor_absoluteX="211dp"
-            tools:layout_editor_absoluteY="392dp" />
+            android:textSize="18sp"
+            android:textColor="#0088A3"
+        />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/main_LBL_phone"
@@ -45,8 +49,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="Phone"
-            tools:layout_editor_absoluteX="199dp"
-            tools:layout_editor_absoluteY="464dp" />
+            android:textSize="18sp"
+            android:textColor="#0088A3"
+        />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -56,7 +61,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="log out" />
+        android:text="log out"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0088A3"
+        />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_my_destinations"
@@ -65,5 +73,28 @@
         android:layout_below="@id/lin_layout"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="My Destinations" />
+        android:text="My Destinations"
+        android:textColor="#FFFFFF"
+         android:backgroundTint="#0088A3"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/mountains" />
+
+    </FrameLayout>
+
+
+
+
 </RelativeLayout>

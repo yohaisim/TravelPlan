@@ -56,7 +56,7 @@ public class LoginActivity extends AppCompatActivity {
         Intent signInIntent = AuthUI.getInstance()
                 .createSignInIntentBuilder()
                 .setAvailableProviders(providers)
-                .setLogo(R.drawable.logo1)
+                .setLogo(R.drawable.logo1).setTheme(R.style.AppThemeFirebaseAuth)
                 .build();
         signInLauncher.launch(signInIntent);
     }

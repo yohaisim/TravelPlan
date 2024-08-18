@@ -34,22 +34,33 @@ public class MapFragment extends Fragment {
     private final OnMapReadyCallback callback = new OnMapReadyCallback() {
         @Override
         public void onMapReady(GoogleMap googleMap) {
-            if (location != null) {
+            if (location != null && !location.trim().isEmpty()) {
                 Log.d("MapFragment", "Location received: " + location);
                 try {
                     String[] locParts = location.split(",");
-                    LatLng latLng = new LatLng(Double.parseDouble(locParts[0]), Double.parseDouble(locParts[1]));
-                    googleMap.addMarker(new MarkerOptions().position(latLng).title("Attraction Location"));
-                    googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12)); // Adjust zoom level as needed
+                    if (locParts.length == 2) {
+                        double lat = Double.parseDouble(locParts[0].trim());
+                        double lng = Double.parseDouble(locParts[1].trim());
+                        LatLng latLng = new LatLng(lat, lng);
+                        googleMap.addMarker(new MarkerOptions().position(latLng).title("Attraction Location"));
+                        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 15)); // Zoom level 15 for better view
+                        Log.d("MapFragment", "Map updated with location: " + lat + ", " + lng);
+                    } else {
+                        Log.e("MapFragment", "Invalid location format: not enough parts");
+                    }
                 } catch (NumberFormatException e) {
-                    Log.e("MapFragment", "Invalid location format", e);
+                    Log.e("MapFragment", "Invalid location format: cannot parse to double", e);
                 }
             } else {
-                Log.e("MapFragment", "Location is null");
+                Log.e("MapFragment", "Location is null or empty");
+                // Set default location to Disneyland Paris
+                LatLng defaultLocation = new LatLng(48.8673893, 2.7810181);
+                googleMap.addMarker(new MarkerOptions().position(defaultLocation).title("Default Location"));
+                googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(defaultLocation, 15));
+                Log.d("MapFragment", "Map updated with default location");
             }
         }
     };
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,

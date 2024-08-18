@@ -1,9 +1,20 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
     <style name="Base.Theme.TravelPlan_Yohai" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowBackground">@color/colorBackground</item>
     </style>
 
-    <style name="Theme.TravelPlan_Yohai" parent="Base.Theme.TravelPlan_Yohai" />
+    <style name="AppThemeFirebaseAuth" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/colorBackground</item>
+    </style>
+
+    <style name="Theme.TravelPlan_Yohai" parent="Base.Theme.TravelPlan_Yohai">
+        <item name="android:windowBackground">@color/colorBackground</item>
+    </style>
 </resources>

@@ -2,6 +2,7 @@
 package com.example.travelplan_yohai.activities;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -33,13 +34,22 @@ public class AttractionInfoActivity extends AppCompatActivity {
         initViews();
 
         if (savedInstanceState == null) {
-            // Retrieve location from the Attraction object
-            String location = attraction.getLocation();
-            // Pass the location to the MapFragment
+            String rawLocation = attraction.getLocation();
+            Log.d("AttractionInfoActivity", "Raw location: " + rawLocation);
+            String processedLocation = processLocation(rawLocation);
+            Log.d("AttractionInfoActivity", "Processed location: " + processedLocation);
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.map_container, MapFragment.newInstance(location))
+                    .replace(R.id.map_container, MapFragment.newInstance(processedLocation))
                     .commit();
         }
+    }
+    private String processLocation(String rawLocation) {
+        if (rawLocation == null || rawLocation.trim().isEmpty()) {
+            // Return a default location if the rawLocation is null or empty
+            return "48.8673893,2.7810181"; // Default to Disneyland Paris coordinates
+        }
+        // Remove any potential whitespace
+        return rawLocation.trim();
     }
 
     private void initViews() {

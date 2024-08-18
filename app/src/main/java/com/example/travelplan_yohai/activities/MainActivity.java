@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private AppCompatTextView main_LBL_email;
     private AppCompatTextView main_LBL_phone;
     private Button logoutButton;
-    private Button myDestinationsButton; // הוספת כפתור עבור My Destinations
+    private Button myDestinationsButton;
 
     private FirebaseUser user;
 
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         myDestinationsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openMyDestinations(); // הוספת מאזין לחיצה לכפתור
+                openMyDestinations();
             }
         });
     }
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         main_LBL_email = findViewById(R.id.main_LBL_email);
         main_LBL_phone = findViewById(R.id.main_LBL_phone);
         logoutButton = findViewById(R.id.logout);
-        myDestinationsButton = findViewById(R.id.button_my_destinations); // איתור הכפתור עבור My Destinations
+        myDestinationsButton = findViewById(R.id.button_my_destinations);
     }
 
     private void checkUserStatus() {
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         Glide.with(this)
                 .load(user.getPhotoUrl())
                 .centerCrop()
-                .placeholder(R.drawable.logo1)
+                .placeholder(R.drawable.traveler)
                 .into(main_IMG_image);
         main_LBL_name.setText(user.getDisplayName());
         main_LBL_email.setText(user.getEmail());
