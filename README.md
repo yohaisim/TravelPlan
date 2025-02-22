@@ -1,5 +1,6 @@
-# 🌍 TravelPlan – Smart Travel App
   <img src="https://i.postimg.cc/pVd569w4/2025-02-22-235918.png" alt="logo" width="1000">
+
+# 🌍 TravelPlan – Smart Travel App
 
 **TravelPlan** is a travel management and planning app that allows users to **discover, select, and organize destinations and attractions** worldwide in a simple and convenient way.
 
