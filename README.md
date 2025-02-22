@@ -14,11 +14,10 @@
 - ✅ **Attraction Details** – View attraction descriptions and locations on the map.
 
 ## 🎮 How It Works?
-### 🔹 Login
+### 🔹 Login and User Profile
 The user selects how to log in (via email, Google account, etc.).  
-### 🔹 User Profile
 The user's personal details are displayed in the profile screen.  
-![Profile Screen]([link-to-your-image.png](https://i.postimg.cc/rF17rbK1/2025-02-22-233259.png))
+![Profile Screen](https://i.postimg.cc/rF17rbK1/2025-02-22-233259.png)
 
 ### 🔹 Choosing Destinations
 - Users can browse **"All Destinations"** to view a list of all available cities to visit.
