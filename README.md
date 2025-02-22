@@ -17,19 +17,17 @@
 ### 🔹 Login and User Profile
 The user selects how to log in (via email, Google account, etc.).  
 The user's personal details are displayed in the profile screen.  
-<img src="[images/login_screen.png](https://i.postimg.cc/rF17rbK1/2025-02-22-233259.png)" alt="Login Screen" width="400">
 
 ### 🔹 Choosing Destinations
 - Users can browse **"All Destinations"** to view a list of all available cities to visit.
 - Cities can be added to **"My Destinations"** to create a personal travel list.
-- Clicking the **"+"** button adds a destination to the list.  
-![Destinations Screen](link-to-your-image.png)
-
+- Clicking the **"+"** button adds a destination to the list.
+  
 ### 🔹 Choosing Attractions
 - Each city in "My Destinations" contains various attractions.
 - Users can browse **"All Attractions"** within a selected destination.
 - Attractions can be added to **"My Attractions"** for personalized trip planning.  
-![Attractions Screen](link-to-your-image.png)
+<img src="https://i.postimg.cc/Bn4ZLkBD/2025-02-22-235011.png" alt="Login Screen" width="400">
 
 ### 🔹 Attraction Information
 - Clicking on an attraction opens a screen displaying **detailed information** about it.
