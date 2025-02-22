@@ -1,11 +1,11 @@
 # 🌍 TravelPlan – Smart Travel App
 
-**TravelPlan** is a travel management and planning app that allows users to **discover, select, and organize attractions and destinations** worldwide in a simple and convenient way.
+**TravelPlan** is a travel management and planning app that allows users to **discover, select, and organize destinations and attractions** worldwide in a simple and convenient way.
 
 🛠️ **This app was developed as part of the "Mobile Application Development in Android" course in the Computer Science degree.**
 
 ## 📌 Key Features
-- ✅ **Destination Management** – Select and save favorite destinations.
+- ✅ **Destination Management** – Select and save favorite cities as destinations.
 - ✅ **Attraction Discovery** – Browse and add attractions for each destination.
 - ✅ **Personal Profile** – View user profile including picture, name, and email.
 - ✅ **Intuitive Interface** – Simple navigation and user-friendly management.
@@ -23,15 +23,20 @@ The user's personal details are displayed in the profile screen.
 ![Profile Screen](link-to-your-image.png)
 
 ### 🔹 Choosing Destinations
-Cities can be added to **"My Destinations"** from the available destinations list.  
+- Users can browse **"All Destinations"** to view a list of all available cities to visit.
+- Cities can be added to **"My Destinations"** to create a personal travel list.
+- Clicking the **"+"** button adds a destination to the list.  
 ![Destinations Screen](link-to-your-image.png)
 
 ### 🔹 Choosing Attractions
-For each destination, users can select attractions and add them to **"My Attractions"**.  
+- Each city in "My Destinations" contains various attractions.
+- Users can browse **"All Attractions"** within a selected destination.
+- Attractions can be added to **"My Attractions"** for personalized trip planning.  
 ![Attractions Screen](link-to-your-image.png)
 
 ### 🔹 Attraction Information
-Clicking on an attraction displays detailed information about it and its location on the map.  
+- Clicking on an attraction opens a screen displaying **detailed information** about it.
+- Attractions selected from **"All Attractions"** include an **"Add Attraction"** button to add them to the user’s list.  
 ![Attraction Info](link-to-your-image.png)
 
 ## 🛠 Technologies
