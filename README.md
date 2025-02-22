@@ -51,7 +51,7 @@
 
 ## 📥 Installation & Running
 ```bash
-git clone https://github.com/username/TravelPlan.git
+git clone https://github.com/yohaisim/TravelPlan.git
 cd TravelPlan
 ```
 📌 Open the project in Android Studio and run it on an emulator or a real device.
