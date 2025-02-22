@@ -15,24 +15,27 @@
 
 ## 🎮 How It Works?
 ### 🔹 Login and User Profile
-The user selects how to log in (via email, Google account, etc.).  
-The user's personal details are displayed in the profile screen.  
+- user selects how to log in (via email, Google account, etc.).  
+- The user's personal details are displayed in the profile screen.  
 
 ### 🔹 Choosing Destinations
 - Users can browse **"All Destinations"** to view a list of all available cities to visit.
 - Cities can be added to **"My Destinations"** to create a personal travel list.
 - Clicking the **"+"** button adds a destination to the list.
-  
+
+  <img src="https://i.postimg.cc/Bn4ZLkBD/2025-02-22-235011.png" alt="Login Screen" width="600">
+
 ### 🔹 Choosing Attractions
 - Each city in "My Destinations" contains various attractions.
 - Users can browse **"All Attractions"** within a selected destination.
 - Attractions can be added to **"My Attractions"** for personalized trip planning.  
-<img src="https://i.postimg.cc/Bn4ZLkBD/2025-02-22-235011.png" alt="Login Screen" width="400">
 
 ### 🔹 Attraction Information
 - Clicking on an attraction opens a screen displaying **detailed information** about it.
-- Attractions selected from **"All Attractions"** include an **"Add Attraction"** button to add them to the user’s list.  
-![Attraction Info](link-to-your-image.png)
+- Attractions selected from **"All Attractions"** include an **"Add Attraction"** button to add them to the user’s list.
+- 
+    <img src="https://i.postimg.cc/BQ875nMf/2025-02-22-235401.png" alt="Login Screen" width="600">
+  
 
 ## 🛠 Technologies
 - **Programming Language:** Java
