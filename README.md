@@ -55,4 +55,4 @@ cd TravelPlan
 📌 Open the project in Android Studio and run it on an emulator or a real device.
 
 ## 📄 License
-This app is developed as an open-source project, and contributions are welcome!
+This app is developed as an open-source project.
