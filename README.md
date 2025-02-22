@@ -17,7 +17,7 @@
 ### 🔹 Login and User Profile
 The user selects how to log in (via email, Google account, etc.).  
 The user's personal details are displayed in the profile screen.  
-![Profile Screen](https://i.postimg.cc/rF17rbK1/2025-02-22-233259.png)
+<img src="[images/login_screen.png](https://i.postimg.cc/rF17rbK1/2025-02-22-233259.png)" alt="Login Screen" width="400">
 
 ### 🔹 Choosing Destinations
 - Users can browse **"All Destinations"** to view a list of all available cities to visit.
